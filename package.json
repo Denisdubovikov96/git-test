@@ -1,0 +1,13 @@
+{
+  "name": "belocon-new-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"cd client && yarn start\" \"cd server && yarn develop\"",
+    "install-all": "cd client && yarn install && cd ../server && yarn install && cd .. && yarn install"
+  },
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
